@@ -62,7 +62,7 @@ def main(nick, password):
         code_suffix = '</pre></div></div><a href="/paste/'
         code = findInBetween(r.text, code_prefix, code_suffix) + '\n'
         code = html.unescape(code)
-        filename = f'{nick}/{prob_id + " - " + prob_name}.cpp'
+        filename = f'{src}/{prob_id + " - " + prob_name}.cpp'
         os.makedirs(os.path.split(filename)[0], exist_ok = True)
         with open(filename, 'w') as f:
             f.write(code)
