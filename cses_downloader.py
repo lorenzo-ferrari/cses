@@ -50,7 +50,7 @@ def main(nick, password):
             solved.append((prob_id, prob_name))
 
     for (prob_id, prob_name) in solved:
-        print(prob_id, "-", prob_name, ": downloading")
+        print(prob_id, "-", prob_name, ": downloading", end="\r")
         r = requests.post('https://cses.fi/problemset/task/'+prob_id, headers=_headers, data=_params)
         all_subs = r.text.split('\n')[-3].split('href="/problemset/result/')[1:]
         successful_subs = [sub[ : sub.find('/"')] for sub in all_subs if sub.find(fullscore_icon) != -1]
