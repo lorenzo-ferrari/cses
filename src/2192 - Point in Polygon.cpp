@@ -53,7 +53,7 @@ bool boundary(int n, vector<pt> &P, pt &A) {
 
 void locate(int n, vector<pt> &P, pt &A) {
 	if (boundary(n, P, A)) { cout << "BOUNDARY\n"; return; }
-	pt Q = pt(1, 2e9);
+	pt Q = pt(2e9+1, 2e9);
 	int k = 0;
 	for (int i = 0; i < n; i++)
 		k += intersect(A, Q, P[i], P[(i+1)%n]);
