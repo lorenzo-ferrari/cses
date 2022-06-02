@@ -55,7 +55,7 @@ def main(nick, password):
         all_subs = r.text.split('\n')[-3].split('href="/problemset/result/')[1:]
         successful_subs = [sub[ : sub.find('/"')] for sub in all_subs if sub.find(fullscore_icon) != -1]
         if len(successful_subs) == 0:
-            print('Something went wrong: can\'t find any fullscore submissions')
+            print('Something went wrong: can\'t find any fullscore submission')
             quit()
         r = requests.post('https://cses.fi/problemset/result/'+successful_subs[0], headers=_headers, data=_params)
         code_prefix = '<pre class="prettyprint linenums resize-horizontal" style="">'
@@ -64,7 +64,7 @@ def main(nick, password):
         code = html.unescape(code)
         filename = f'src/{prob_id + " - " + prob_name}.cpp'
         os.makedirs(os.path.split(filename)[0], exist_ok = True)
-        with open(filename, 'w') as f:
+        with open(filename, 'w', encoding='utf-8') as f:
             f.write(code)
         print(prob_id, "-", prob_name, ": download completed")
 
