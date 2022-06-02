@@ -1,6 +1,6 @@
 ################################################################################
 # Script Name   : cses_downloader
-# Description   : download accepted solutions of cses.fi
+# Description   : download accepted solutions from cses.fi
 # Author        : Lorenzo Ferrari
 # Github        : https://github.com/lorenzo-ferrari/
 ################################################################################
