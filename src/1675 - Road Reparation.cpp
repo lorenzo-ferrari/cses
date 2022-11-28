@@ -1,70 +1,69 @@
-#include <queue>
-#include <vector>
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-#define F first
-#define S second
+using LL = long long;
 
-int32_t main() {
-    int64_t n, m;
-    scanf("%ld%ld", &n, &m);
-    vector <vector<pair<int64_t, int64_t>>> g(n + 1);
+struct Dsu {
+    vector<int> p;
+    Dsu(int n) : p(vector<int>(n)) {
+        iota(begin(p), end(p), 0);
+    }
+    int find(int i) { return p[i] == i ? i : p[i] = find(p[i]); }
+    bool onion(int a, int b) {
+        a = find(a);
+        b = find(b);
+        if (a == b) {
+            return false;
+        }
+        p[b] = a;
+        return true;
+    }
+    int count() const {
+        int ans = 0;
+        for (int i = 0; i < (int)p.size(); ++i) {
+            ans += (p[i] == i);
+        }
+        return ans;
+    }
+};
 
-    for (int64_t i = 0, a, b, c; i < m; i++) {
-        scanf("%ld%ld%ld", &a, &b, &c);
-        g[a].push_back({b, c});
-        g[b].push_back({a, c});
+int main() {
+    int n; cin >> n;
+    int m; cin >> m;
+    vector<vector<array<LL, 2>>> adj(n);
+    for (LL i = 0, a, b, c; i < m; ++i) {
+        cin >> a >> b >> c; --a, --b;
+        adj[a].push_back({b, c});
+        adj[b].push_back({a, c});
     }
 
-    queue <int> q;
-    vector <bool> vs(n + 1);
-    q.push(1);
-    while (!q.empty()) {
-        int v = q.front();
-        q.pop();
-        for (auto e : g[v]) {
-            if (!vs[e.F]) {
-                vs[e.F] = true;
-                q.push(e.F);
+    LL ans = 0;
+    int cnt = 0;
+
+    Dsu dsu(n);
+    for (int it = 1; it < 20; ++it) {
+        vector<array<LL, 3>> me(n, {1LL<<50, -1});
+        for (int i = 0; i < n; ++i) {
+            int ii = dsu.find(i);
+            for (const auto& [j, w] : adj[i]) {
+                int jj = dsu.find(j);
+                if (ii == jj) continue;
+                if (w < me[ii][0]) {
+                    me[ii] = {w, jj};
+                }
+            }
+        }
+        for (int i = 0; i < n; ++i) {
+            if (i == dsu.find(i) && me[i][1] != -1) {
+                if (dsu.onion(i, me[i][1])) {
+                    ans += me[i][0];
+                }
             }
         }
     }
-
-    for (int i = 1; i <= n; i++) {
-        if (!vs[i]) {
-            printf("IMPOSSIBLE\n");
-            return 0;
-        }
+    if (dsu.count() != 1) {
+        cout << "IMPOSSIBLE\n";
+    } else {
+        cout << ans << "\n";
     }
-
-    const int64_t INF = 1e15;
-
-    vector <bool> vis(n + 1);
-    vector <int64_t> d(n + 1, INF);
-    priority_queue <pair<int64_t, int64_t>> Q;
-
-    d[1] = 0;
-    Q.push({0, 1});
-    while (!Q.empty()) {
-        int v =  Q.top().S;
-
-        Q.pop();
-
-        if (vis[v])
-            continue;
-        vis[v] = true;
-
-        for (auto e : g[v]) {
-            if (!vis[e.F] && d[e.F] > e.S) {
-                d[e.F] = e.S;
-                Q.push({-d[e.F], e.F});
-            }
-        }
-    }
-
-    int64_t tot = 0;
-    for (int i = 1; i <= n; i++)
-        tot += d[i];
-    
-    printf("%ld\n", tot);
 }
+

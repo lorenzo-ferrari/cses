@@ -1,30 +1,23 @@
+#pragma GCC optimize ("O3")
 #include <bits/stdc++.h>
 using namespace std;
+using LL = long long;
 
-int main(){
+int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-
-    int64_t n, target;
-    int64_t v[100], dp[1000005];
-
-    cin >> n >> target;
-    fill(dp+1, dp+target+2, 1000000007);
-    dp[0] = 0;
-
-    for(int i = 0; i < n; i++) cin >> v[i];
-
-    sort(v, v+n);
-
-    for(int i = 1; i <= target; i++){
-        for(int m = 0; m < n; m++){
-            if(v[m] > i) break;
-            dp[i] = min(dp[i], 1+dp[i-v[m]]);
+    int n; cin >> n;
+    int x; cin >> x;
+    vector<int> v(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> v[i];
+    }
+    vector<int> dp(x+1, 1e9); dp[0] = 0;
+    for (int i = 0; i < n; ++i) {
+        for (int j = v[i]; j <= x; ++j) {
+            dp[j] = min(dp[j], dp[j - v[i]] + 1);
         }
     }
-
-    if(dp[target] == 1000000007)
-        cout << -1 << "\n";
-    else 
-        cout << dp[target] << "\n";
+    cout << (dp[x] == 1e9 ? -1 : dp[x]) << "\n";
 }
+

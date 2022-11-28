@@ -1,44 +1,124 @@
-#include <bits/stdc++.h>
+#include <random>
+#include <cassert>
+#include <iostream>
+#pragma GCC optimize ("O3")
 using namespace std;
+using LL = long long;
 
-const int N = 2e5;
-int n, q;
-int64_t t[N<<1];
+mt19937 rng{42};
 
-void build() //build the tree
-{
-    for(int i = n-1; i > 0; --i) t[i] = t[i<<1]+t[i<<1|1];
+struct treap {
+  int x, y;
+  int a, b; // range [a, b]
+  LL val;
+  LL sum;
+  treap* l = nullptr;
+  treap* r = nullptr;
+  treap() {}
+  treap(int x, LL val) : x(x), y(rng()), a(x), b(x), val(val), sum(val) {}
+  ~treap() {
+    if (l) delete l;
+    if (r) delete r;
+  }
+};
+
+inline void clean(treap* const t) {
+  if (t) {
+    t->l = t->r = nullptr;
+    delete t;
+  }
 }
 
-void modify(int p, int value) //set value at position p
-{
-    for(t[p+=n] = value; p > 1; p>>=1) t[p>>1] = t[p] + t[p^1];
+inline LL sum(const treap* const t) {
+  return t ? t->sum : 0LL;
 }
 
-int64_t query(int l, int r) //sum in interval [l, r)
-{
-    int64_t res = 0;
-    for(l += n, r += n; l < r; l >>=1, r >>= 1)
-    {
-        if(l&1) res += t[l++];
-        if(r&1) res += t[--r];
+inline void upd(treap* const t) {
+  // assume t->l and t->r are already updated
+  if (t) {
+    t->sum = t->val + sum(t->l) + sum(t->r);
+    t->a = t->l ? t->l->a : t->x;
+    t->b = t->r ? t->r->b : t->x;
+  }
+}
+
+void split(treap* const t, const int x, treap*& l, treap*& r) {
+  // split t in [-inf, x], [x+1, +inf]
+  if (!t) {
+    l = r = nullptr;
+  } else if (t->x <= x) {
+    split(t->r, x, t->r, r); l = t;
+  } else {
+    split(t->l, x, l, t->l); r = t;
+  }
+  upd(l);
+  upd(r);
+}
+
+void merge(treap*& t, treap* l, treap* r) {
+  if (!l || !r) {
+    t = l ? l : r;
+  } else if (l->y > r->y) {
+    merge(l->r, l->r, r); t = l;
+  } else {
+    merge(r->l, l, r->l); t = r;
+  }
+  upd(t);
+}
+
+void insert(treap*& t, treap* const nw) {
+  // assume nw->x is not present in t
+  assert(!t || t->x != nw->x);
+  if (!t) {
+    t = nw;
+  } else if (nw->y > t->y) {
+    split(t, nw->x, nw->l, nw->r);
+    t = nw;
+  } else {
+    insert(nw->x <= t->x ? t->l : t->r, nw);
+  }
+  upd(t);
+}
+
+void erase(treap*& t, const int x) {
+  if (!t) return;
+  if (t->x == x) {
+    treap* tmp = t;
+    merge(t, t->l, t->r);
+    clean(tmp);
+  } else {
+    erase(x <= t->x ? t->l : t->r, x);
+  }
+  upd(t);
+}
+
+LL sum(treap* const t, int l, int r) {
+  upd(t);
+  if (!t || r < t->a || t->b < l) return 0LL;
+  if (l <= t->a && t->b <= r) return t->sum;
+  return (l <= t->x && t->x <= r ? t->val : 0LL) + sum(t->l, l, r) + sum(t->r, l, r);
+}
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int n; cin >> n;
+  int q; cin >> q;
+  vector<int> a(n);
+  treap* t = nullptr;
+  for (int i = 0; i < n; ++i) {
+    cin >> a[i];
+    insert(t, new treap(i+1, a[i]));
+  }
+  for (int i = 0, a, b, c; i < q; ++i) {
+    cin >> a >> b >> c;
+    if (a == 1) {
+      erase(t, b);
+      insert(t, new treap(b, c));
+    } else {
+      cout << sum(t, b, c) << "\n";
     }
-
-    return res;
+  }
+  delete t;
 }
 
-int main()
-{
-    cin >> n >> q;
-    for(int i = 0; i < n; ++i)scanf("%ld", t + n + i);
-    build();
-    int type, a, b;
-    for(int i = 0; i < q; i++)
-    {
-        cin >> type >> a >> b;
-        if(type == 1)
-            modify(a-1, b);
-        else
-            cout << query(a-1, b) << "\n";
-    }
-}
