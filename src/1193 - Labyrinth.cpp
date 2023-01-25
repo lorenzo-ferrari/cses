@@ -1,97 +1,87 @@
-#include <iostream>
-#pragma GCC optimize ("O3")
-#define MAXN (1 << 20) + 42
+#include <bits/stdc++.h>
+using namespace std;
+// 5 8
+// ########
+// #.A#...#
+// #.##.#B#
+// #......#
+// ########
 
-#define conv(a, b) (a << 10) + b
-
-inline int get_int() {
-    int n = 0;
-    char c = getchar_unlocked();
-    while (c >= '0') {
-        n = (n << 3) + (n << 1) + c - '0';
-        c = getchar_unlocked();
-    }
-    return n;
-}
-
-inline void print(int n) {
-    int i = 0;
-    char S[20];
-    if (n == 0) {
-        putchar_unlocked('0');
-        putchar_unlocked(' ');
-        return;
-    }
-    while (n) {
-        S[i++] = n % 10 + '0';
-        n /= 10;
-    }
-    while (i--)
-        putchar_unlocked(S[i]);
-    putchar_unlocked('\n');
-}
+int dx[4]{1, 0, -1, 0};
+int dy[4]{0, 1, 0, -1};
+char dir[4]{'D', 'R', 'U', 'L'};
 
 int main() {
-    int n = get_int();
-    int m = get_int();
-    int Q[MAXN]{};
-    bool mp[MAXN]{};
-    char tramite[MAXN]{};
-    int txa = 0, txb = 0, r = 0, l = 0, tx;
-    char c;
+  int n;
+  cin >> n;
+  int m;
+  cin >> m;
+  array<int, 2> a, b;
+  vector<vector<bool>> good(n, vector<bool>(m));
+  for (int i = 0; i < n; ++i) {
+    for (int j = 0; j < m; ++j) {
+      char c;
+      cin >> c;
+      if (c != '#') {
+        good[i][j] = true;
+      }
+      if (c == 'A') {
+        a = {i, j};
+      } else if (c == 'B') {
+        b = {i, j};
+      }
+    }
+  }
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            c = getchar_unlocked();
-            if (c == 'A') {txa = conv(i, j);}
-            if (c == 'B') {txb = conv(i, j);}
-            mp[conv(i, j)] = (c != '#');
-        }
-        c = getchar_unlocked();
-    }
-    
-    Q[l++] = txa;
-    tramite[txa] = 'A';
-    while (l != r) {
-        tx = Q[r++];
-        if ((tx >> 10) > 0 && mp[tx - (1 << 10)] && !tramite[tx - (1 << 10)]) {
-            tramite[tx - (1 << 10)] = 'U';
-            Q[l++] = tx - (1 << 10);
-        }
-        if ((tx >> 10) < n - 1 && mp[tx + (1 << 10)] && !tramite[tx + (1 << 10)]) {
-            tramite[tx + (1 << 10)] = 'D';
-            Q[l++] = tx + (1 << 10);
-        }
-        if (tx - ((tx >> 10) << 10) > 0 && mp[tx - 1] && !tramite[tx - 1]) {
-            tramite[tx - 1] = 'L';
-            Q[l++] = tx - 1;
-        }
-        if (tx - ((tx >> 10) << 10) < m - 1 && mp[tx + 1] && !tramite[tx + 1]) {
-            tramite[tx + 1] = 'R';
-            Q[l++] = tx + 1;
-        }
-    }
+  vector<vector<int>> d(n, vector<int>(m, 1e9));
+  vector<vector<char>> from(n, vector<char>(m, ' '));
+  queue<array<int, 2>> Q;
+  Q.push(a);
+  d[a[0]][a[1]] = 0;
+  while (!Q.empty()) {
+    auto [x, y] = Q.front();
+    Q.pop();
 
-    if (!tramite[txb]) {
-        putchar_unlocked('N');
-        putchar_unlocked('O');
-        return 0;
+    for (int i = 0; i < 4; ++i) {
+      int new_x = x + dx[i];
+      int new_y = y + dy[i];
+      if (new_x < 0 || new_x >= n)
+        continue;
+      if (new_y < 0 || new_y >= m)
+        continue;
+      if (!good[new_x][new_y])
+        continue;
+      if (d[new_x][new_y] > d[x][y] + 1) {
+        d[new_x][new_y] = d[x][y] + 1;
+        Q.push({new_x, new_y});
+        from[new_x][new_y] = dir[i];
+      }
     }
+  }
 
-    putchar_unlocked('Y');
-    putchar_unlocked('E');
-    putchar_unlocked('S');
-    putchar_unlocked('\n');
-    
-    int ans = 0;
-    char S[MAXN];
-    while (txb != txa) {
-        S[ans++] = tramite[txb];
-        if (tramite[txb] == 'U') {txb += (1 << 10);}
-        else if (tramite[txb] == 'D') {txb -= (1 << 10);}
-        else if (tramite[txb] == 'L') {txb++;}
-        else if (tramite[txb] == 'R') {txb--;}
+  if (d[b[0]][b[1]] == 1e9) {
+    cout << "NO\n";
+  } else {
+    cout << "YES\n";
+    cout << d[b[0]][b[1]] << "\n";
+
+    auto cur = b;
+    string ans = "";
+    while (cur != a) {
+      // cerr << cur[0] << " " << cur[1] << endl;
+      array<int, 2> nxt;
+      for (int i = 0; i < 4; ++i) {
+        if (from[cur[0]][cur[1]] == dir[i]) {
+          nxt[0] = cur[0] - dx[i];
+          nxt[1] = cur[1] - dy[i];
+          ans.push_back(dir[i]);
+          break;
+        }
+      }
+      cur = nxt;
     }
-    print(ans);
-    while (ans--) putchar_unlocked(S[ans]);
+    reverse(begin(ans), end(ans));
+    cout << ans << "\n";
+  }
 }
+
