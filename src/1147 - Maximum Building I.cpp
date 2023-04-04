@@ -1,3 +1,10 @@
+/*
+Task:              1147 Maximum Building I
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-09 21:51:56
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 typedef pair<int, int> pii;

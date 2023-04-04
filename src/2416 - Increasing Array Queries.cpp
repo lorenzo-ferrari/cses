@@ -1,3 +1,10 @@
+/*
+Task:              2416 Increasing Array Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-26 20:26:26
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -64,4 +71,3 @@ int main() {
         cout << query(a, b) << "\n";
     }
 }
-

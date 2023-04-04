@@ -1,3 +1,10 @@
+/*
+Task:              1734 Distinct Values Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-25 16:51:40
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -38,4 +45,3 @@ int main() {
         cout << ans << "\n";
     }
 }
-

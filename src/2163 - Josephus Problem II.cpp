@@ -1,3 +1,10 @@
+/*
+Task:              2163 Josephus Problem II
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-26 22:03:49
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,4 +53,3 @@ int main() {
     }
     cout << "\n";
 }
-

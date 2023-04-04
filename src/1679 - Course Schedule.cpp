@@ -1,3 +1,10 @@
+/*
+Task:              1679 Course Schedule
+Sender:            lorenzo_ferrari
+Submission time:   2020-11-01 19:12:53
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <vector>
 #include <iostream>
 

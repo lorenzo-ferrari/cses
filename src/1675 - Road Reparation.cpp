@@ -1,3 +1,10 @@
+/*
+Task:              1675 Road Reparation
+Sender:            lorenzo_ferrari
+Submission time:   2022-11-17 16:46:38
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -66,4 +73,3 @@ int main() {
         cout << ans << "\n";
     }
 }
-

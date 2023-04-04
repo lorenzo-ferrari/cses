@@ -1,3 +1,10 @@
+/*
+Task:              1195 Flight Discount
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-30 10:42:59
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <array>
 #include <queue>
 #include <vector>

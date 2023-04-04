@@ -1,3 +1,10 @@
+/*
+Task:              2194 Minimum Euclidean Distance
+Sender:            lorenzo_ferrari
+Submission time:   2022-06-30 15:46:06
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -63,4 +70,3 @@ int main() {
   sort(P.begin(), P.end(), [](pt a, pt b){return a.x < b.x;});
   cout << min_dist(P) << "\n";
 }
-

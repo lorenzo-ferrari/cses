@@ -1,3 +1,10 @@
+/*
+Task:              1094 Increasing Array
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-30 12:42:14
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,10 @@
+/*
+Task:              1074 Stick Lengths
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-14 12:04:13
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -19,4 +26,3 @@ int32_t main() {
         ans += abs(v[n/2] - i);
     cout << ans << "\n";
 }
-

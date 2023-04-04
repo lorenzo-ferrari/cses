@@ -1,3 +1,10 @@
+/*
+Task:              1636 Coin Combinations II
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-21 15:31:51
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,4 +28,3 @@ int main() {
         }
     cout << dp[x] << "\n";
 }
-

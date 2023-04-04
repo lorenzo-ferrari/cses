@@ -1,3 +1,10 @@
+/*
+Task:              1623 Apple Division
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-30 13:42:28
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

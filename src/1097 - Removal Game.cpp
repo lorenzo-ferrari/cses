@@ -1,3 +1,10 @@
+/*
+Task:              1097 Removal Game
+Sender:            lorenzo_ferrari
+Submission time:   2021-09-06 16:44:12
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,4 +33,3 @@ int32_t main() {
     }
     cout << dp[0][n] << "\n";
 }
-

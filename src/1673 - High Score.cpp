@@ -1,3 +1,10 @@
+/*
+Task:              1673 High Score
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-30 10:23:52
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <queue>
 #include <vector>
 #include <iostream>

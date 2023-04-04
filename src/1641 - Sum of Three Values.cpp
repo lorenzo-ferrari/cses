@@ -1,3 +1,10 @@
+/*
+Task:              1641 Sum of Three Values
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-14 13:52:15
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -39,4 +46,3 @@ int main() {
   }
   cout << "IMPOSSIBLE" << "\n";
 }
-

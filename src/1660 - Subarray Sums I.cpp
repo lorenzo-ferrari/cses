@@ -1,3 +1,10 @@
+/*
+Task:              1660 Subarray Sums I
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-17 21:38:54
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -29,4 +36,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

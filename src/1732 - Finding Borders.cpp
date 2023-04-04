@@ -1,3 +1,10 @@
+/*
+Task:              1732 Finding Borders
+Sender:            lorenzo_ferrari
+Submission time:   2021-05-29 18:56:33
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -43,4 +50,3 @@ int32_t main() {
 			cout << n-i << " ";
 	cout << "\n";
 }
-

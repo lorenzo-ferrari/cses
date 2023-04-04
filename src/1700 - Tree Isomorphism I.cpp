@@ -1,3 +1,10 @@
+/*
+Task:              1700 Tree Isomorphism I
+Sender:            lorenzo_ferrari
+Submission time:   2022-10-08 15:33:38
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -44,4 +51,3 @@ int main() {
         solve();
     }
 }
-

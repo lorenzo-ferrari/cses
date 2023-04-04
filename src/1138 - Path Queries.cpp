@@ -1,3 +1,10 @@
+/*
+Task:              1138 Path Queries
+Sender:            lorenzo_ferrari
+Submission time:   2022-05-21 11:22:48
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -120,4 +127,3 @@ int main() {
     }
   }
 }
-

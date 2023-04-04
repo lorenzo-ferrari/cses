@@ -1,3 +1,10 @@
+/*
+Task:              1690 Hamiltonian Flights
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-22 21:37:52
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <iostream>
 #pragma GCC optimize ("Ofast")
 
@@ -49,4 +56,3 @@ int main() {
 
     print(dp[n - 1][(1 << n) - 1]);
 }
-

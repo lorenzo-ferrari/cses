@@ -1,3 +1,10 @@
+/*
+Task:              1674 Subordinates
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-10 21:24:01
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -26,4 +33,3 @@ int main() {
   }
   cout << "\n";
 }
-

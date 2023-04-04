@@ -1,3 +1,10 @@
+/*
+Task:              1144 Salary Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-24 19:30:51
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -73,4 +80,3 @@ int main() {
         }
     }
 }
-

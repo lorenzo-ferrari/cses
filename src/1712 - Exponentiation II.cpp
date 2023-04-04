@@ -1,3 +1,10 @@
+/*
+Task:              1712 Exponentiation II
+Sender:            lorenzo_ferrari
+Submission time:   2020-11-06 23:24:52
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <iostream>
 #pragma GCC optimize ("O3")
 using namespace std;

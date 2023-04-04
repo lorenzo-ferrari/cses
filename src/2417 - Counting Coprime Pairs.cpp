@@ -1,3 +1,10 @@
+/*
+Task:              2417 Counting Coprime Pairs
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-28 10:12:27
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -56,4 +63,3 @@ int main() {
 /*
 
 */
-

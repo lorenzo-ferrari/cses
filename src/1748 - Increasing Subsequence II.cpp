@@ -1,3 +1,10 @@
+/*
+Task:              1748 Increasing Subsequence II
+Sender:            lorenzo_ferrari
+Submission time:   2022-05-27 22:12:14
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -61,4 +68,3 @@ int main() {
   }
   cout << sum << "\n";
 }
-

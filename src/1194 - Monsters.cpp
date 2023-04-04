@@ -1,3 +1,10 @@
+/*
+Task:              1194 Monsters
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-29 18:46:05
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <stack>
 #include <array>
 #include <queue>

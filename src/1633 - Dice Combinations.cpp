@@ -1,3 +1,10 @@
+/*
+Task:              1633 Dice Combinations
+Sender:            lorenzo_ferrari
+Submission time:   2020-05-09 12:59:36
+Language:          C++17
+Result:            ACCEPTED
+*/
 //x-"larghezza", y-"altezza"
 #include <bits/stdc++.h>
 #define MOD 1000000007

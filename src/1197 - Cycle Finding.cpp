@@ -1,3 +1,10 @@
+/*
+Task:              1197 Cycle Finding
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-31 13:02:59
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <map>
 #include <array>
 #include <queue>

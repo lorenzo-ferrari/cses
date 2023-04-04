@@ -1,3 +1,10 @@
+/*
+Task:              2073 Substring Reversals
+Sender:            lorenzo_ferrari
+Submission time:   2022-10-28 12:30:42
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -94,4 +101,3 @@ int main() {
     print(t);
     delete t;
 }
-

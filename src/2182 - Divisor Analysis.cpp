@@ -1,3 +1,10 @@
+/*
+Task:              2182 Divisor Analysis
+Sender:            lorenzo_ferrari
+Submission time:   2022-06-02 22:46:30
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -58,4 +65,3 @@ int main() {
     cout << prd << "\n";
   }
 }
-

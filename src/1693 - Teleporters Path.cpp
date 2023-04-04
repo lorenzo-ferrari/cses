@@ -1,3 +1,10 @@
+/*
+Task:              1693 Teleporters Path
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-22 20:19:20
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -51,4 +58,3 @@ int main() {
     for (int i = 0; i <  s; ++i) cout << ans[i] << " ";
     cout << "\n";
 }
-

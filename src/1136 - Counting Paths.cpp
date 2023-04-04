@@ -1,3 +1,10 @@
+/*
+Task:              1136 Counting Paths
+Sender:            lorenzo_ferrari
+Submission time:   2022-03-04 23:51:08
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -94,4 +101,3 @@ int main() {
   for (int i : ans) cout << i << " ";
   cout << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              2431 Digit Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-11 13:27:55
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -32,4 +39,3 @@ int32_t main() {
 		query();
 	}
 }
-

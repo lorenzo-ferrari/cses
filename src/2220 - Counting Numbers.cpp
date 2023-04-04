@@ -1,3 +1,10 @@
+/*
+Task:              2220 Counting Numbers
+Sender:            lorenzo_ferrari
+Submission time:   2022-05-20 14:30:24
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -52,4 +59,3 @@ int main() {
   LL b; cin >> b;
   cout << solve(b) - solve(a-1) << "\n";
 }
-

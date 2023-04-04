@@ -1,3 +1,10 @@
+/*
+Task:              2079 Finding a Centroid
+Sender:            lorenzo_ferrari
+Submission time:   2022-05-21 12:56:30
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -72,4 +79,3 @@ int main() {
   CentroidDecomposition cd(adj);
   cout << cd.root+1 << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              2217 Collecting Numbers II
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-16 13:27:57
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -59,4 +66,3 @@ int32_t main() {
     for (int i = 0; i < m; i++)
         query();
 }
-

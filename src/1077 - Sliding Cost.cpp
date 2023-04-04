@@ -1,3 +1,10 @@
+/*
+Task:              1077 Sliding Cost
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-19 16:39:44
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -74,4 +81,3 @@ int main() {
   }
   cout << "\n";
 }
-

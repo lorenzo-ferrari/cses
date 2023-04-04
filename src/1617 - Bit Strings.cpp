@@ -1,3 +1,10 @@
+/*
+Task:              1617 Bit Strings
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-30 13:26:11
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #define M 1000000007
 

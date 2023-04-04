@@ -1,3 +1,10 @@
+/*
+Task:              1682 Flight Routes Check
+Sender:            lorenzo_ferrari
+Submission time:   2020-12-03 20:11:48
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -72,4 +79,3 @@ int32_t main() {
 
 	cout << "YES" << "\n";
 }
-

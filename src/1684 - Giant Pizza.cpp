@@ -1,3 +1,10 @@
+/*
+Task:              1684 Giant Pizza
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-20 12:55:14
+Language:          C++17
+Result:            ACCEPTED
+*/
 // https://cses.fi/problemset/task/1684
 #include <algorithm>
 #include <functional>
@@ -144,4 +151,3 @@ int main() {
         std::cout << (i ? '+' : '-') << ' ';
     std::cout << '\n';
 }
-

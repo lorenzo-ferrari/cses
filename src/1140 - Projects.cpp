@@ -1,3 +1,10 @@
+/*
+Task:              1140 Projects
+Sender:            lorenzo_ferrari
+Submission time:   2021-10-16 23:23:49
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,4 +33,3 @@ int main() {
 
   cout << dp.back() << "\n";
 }
-

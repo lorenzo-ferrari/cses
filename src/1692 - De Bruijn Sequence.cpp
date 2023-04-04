@@ -1,3 +1,10 @@
+/*
+Task:              1692 De Bruijn Sequence
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-22 20:30:40
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -30,4 +37,3 @@ int main() {
     for (bool i : ans) cout << i;
     cout << "\n";
 }
-

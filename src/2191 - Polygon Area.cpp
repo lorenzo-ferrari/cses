@@ -1,3 +1,10 @@
+/*
+Task:              2191 Polygon Area
+Sender:            lorenzo_ferrari
+Submission time:   2021-05-22 20:00:19
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -40,4 +47,3 @@ int32_t main() {
 		solve();
 	}
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              1142 Advertisement
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-27 11:47:49
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <stack>
 #include <vector>
 #include <iostream>

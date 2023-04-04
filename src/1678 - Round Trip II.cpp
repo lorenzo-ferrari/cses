@@ -1,3 +1,10 @@
+/*
+Task:              1678 Round Trip II
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-19 20:06:16
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -47,4 +54,3 @@ int main() {
     
     cout << "IMPOSSIBLE" << "\n";
 }
-

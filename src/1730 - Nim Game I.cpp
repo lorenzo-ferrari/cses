@@ -1,3 +1,10 @@
+/*
+Task:              1730 Nim Game I
+Sender:            lorenzo_ferrari
+Submission time:   2022-02-19 18:18:44
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -18,4 +25,3 @@ int main() {
     cout << (xr != 0 ? "first" : "second") << "\n";
   }
 }
-

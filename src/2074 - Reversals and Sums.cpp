@@ -1,3 +1,10 @@
+/*
+Task:              2074 Reversals and Sums
+Sender:            lorenzo_ferrari
+Submission time:   2022-10-31 09:23:21
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -89,4 +96,3 @@ int main() {
     }
     delete t;
 }
-

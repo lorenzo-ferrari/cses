@@ -1,3 +1,10 @@
+/*
+Task:              1079 Binomial Coefficients
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-28 10:21:16
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -32,4 +39,3 @@ int main() {
     cout << ans << "\n";
   }
 }
-

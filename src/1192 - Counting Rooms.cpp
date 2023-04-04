@@ -1,3 +1,10 @@
+/*
+Task:              1192 Counting Rooms
+Sender:            lorenzo_ferrari
+Submission time:   2020-05-22 13:20:16
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

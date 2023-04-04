@@ -1,3 +1,10 @@
+/*
+Task:              1161 Stick Divisions
+Sender:            lorenzo_ferrari
+Submission time:   2022-02-01 22:36:25
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -23,4 +30,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

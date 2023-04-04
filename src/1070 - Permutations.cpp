@@ -1,3 +1,10 @@
+/*
+Task:              1070 Permutations
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-30 13:09:24
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

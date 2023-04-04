@@ -1,3 +1,10 @@
+/*
+Task:              1686 Coin Collector
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-20 09:43:07
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <algorithm>
 #include <vector>
 
@@ -117,4 +124,3 @@ int main() {
 
     cout << *max_element(dp.begin(), dp.end()) << "\n";
 }
-

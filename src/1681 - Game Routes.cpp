@@ -1,3 +1,10 @@
+/*
+Task:              1681 Game Routes
+Sender:            lorenzo_ferrari
+Submission time:   2020-11-01 21:10:42
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <vector>
 #include <iostream>
 using namespace std;

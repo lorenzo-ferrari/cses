@@ -1,3 +1,10 @@
+/*
+Task:              2101 New Roads Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-04 11:51:26
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
@@ -100,4 +107,3 @@ int main() {
   for (int& i : ans)
     cout << i << "\n";
 }
-

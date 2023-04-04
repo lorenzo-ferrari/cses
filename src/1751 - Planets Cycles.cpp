@@ -1,3 +1,10 @@
+/*
+Task:              1751 Planets Cycles
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-19 18:47:09
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -60,4 +67,3 @@ int main() {
 
     for (int i = 1; i <= n; ++i) cout << d[i] + l[i] << " "; cout << "\n";
 }
-

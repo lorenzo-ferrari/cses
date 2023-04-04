@@ -1,3 +1,10 @@
+/*
+Task:              1131 Tree Diameter
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-10 21:36:44
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -36,4 +43,3 @@ int main() {
   dfs(a, -1);
   cout << best[0] << "\n";
 }
-

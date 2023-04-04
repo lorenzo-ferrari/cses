@@ -1,3 +1,10 @@
+/*
+Task:              1196 Flight Routes
+Sender:            lorenzo_ferrari
+Submission time:   2020-11-01 18:35:38
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <set>
 #include <queue>
 #include <vector>

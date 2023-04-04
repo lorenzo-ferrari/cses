@@ -1,3 +1,10 @@
+/*
+Task:              1706 School Excursion
+Sender:            lorenzo_ferrari
+Submission time:   2022-02-14 11:29:30
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -33,4 +40,3 @@ int main() {
     F(n)
         cout << b[i];
 }
-

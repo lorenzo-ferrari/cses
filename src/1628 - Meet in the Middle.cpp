@@ -1,3 +1,10 @@
+/*
+Task:              1628 Meet in the Middle
+Sender:            lorenzo_ferrari
+Submission time:   2022-05-05 15:28:04
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -51,4 +58,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

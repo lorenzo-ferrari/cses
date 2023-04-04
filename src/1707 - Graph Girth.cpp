@@ -1,3 +1,10 @@
+/*
+Task:              1707 Graph Girth
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-20 10:50:11
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -60,4 +67,3 @@ int main() {
     }
     cout << ans << "\n";
 }
-

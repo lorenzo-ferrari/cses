@@ -1,3 +1,10 @@
+/*
+Task:              1671 Shortest Routes I
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-29 19:45:13
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <array>
 #include <queue>
 #include <vector>

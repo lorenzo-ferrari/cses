@@ -1,3 +1,10 @@
+/*
+Task:              1739 Forest Queries II
+Sender:            lorenzo_ferrari
+Submission time:   2021-08-26 13:36:31
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -52,4 +59,3 @@ cin.tie(NULL);
 
     }
 }
-

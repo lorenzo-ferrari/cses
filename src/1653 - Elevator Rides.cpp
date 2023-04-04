@@ -1,3 +1,10 @@
+/*
+Task:              1653 Elevator Rides
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-22 15:31:50
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -27,4 +34,3 @@ int main() {
   }
   cout << dp[(1 << n) - 1][0] << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              2064 Bracket Sequences I
+Sender:            lorenzo_ferrari
+Submission time:   2022-11-29 20:52:17
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -38,4 +45,3 @@ int main() {
 
     cout << ans << "\n";
 }
-

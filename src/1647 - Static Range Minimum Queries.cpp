@@ -1,3 +1,10 @@
+/*
+Task:              1647 Static Range Minimum Queries
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-13 15:39:54
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -42,4 +49,3 @@ int main()
         //printf("%d\n", query(l, r));
     }
 }
-

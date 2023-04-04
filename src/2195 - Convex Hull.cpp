@@ -1,3 +1,10 @@
+/*
+Task:              2195 Convex Hull
+Sender:            lorenzo_ferrari
+Submission time:   2022-04-10 22:51:04
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -87,4 +94,3 @@ int main() {
   for (pt& p : cupper) cout << p << "\n";
   for (int i = clower.size()-2; i > 0; --i) cout << clower[i] << "\n";
 }
-

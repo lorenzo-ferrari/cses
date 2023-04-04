@@ -1,3 +1,10 @@
+/*
+Task:              2185 Prime Multiples
+Sender:            lorenzo_ferrari
+Submission time:   2022-06-02 22:55:34
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -28,4 +35,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

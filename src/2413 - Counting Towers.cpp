@@ -1,3 +1,10 @@
+/*
+Task:              2413 Counting Towers
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-30 19:39:17
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,4 +25,3 @@ int main() {
         cout << (a[x - 1] + b[x - 1]) % mod << "\n";
     }
 }
-

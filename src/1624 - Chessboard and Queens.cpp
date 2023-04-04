@@ -1,3 +1,10 @@
+/*
+Task:              1624 Chessboard and Queens
+Sender:            lorenzo_ferrari
+Submission time:   2020-06-12 23:50:17
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;

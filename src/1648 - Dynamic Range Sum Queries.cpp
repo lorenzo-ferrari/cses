@@ -1,124 +1,59 @@
-#include <random>
-#include <cassert>
-#include <iostream>
-#pragma GCC optimize ("O3")
+/*
+Task:              1648 Dynamic Range Sum Queries
+Sender:            lorenzo_ferrari
+Submission time:   2023-02-07 19:17:09
+Language:          C++17
+Result:            ACCEPTED
+*/
+#include <bits/stdc++.h>
 using namespace std;
-using LL = long long;
 
-mt19937 rng{42};
-
-struct treap {
-  int x, y;
-  int a, b; // range [a, b]
-  LL val;
-  LL sum;
-  treap* l = nullptr;
-  treap* r = nullptr;
-  treap() {}
-  treap(int x, LL val) : x(x), y(rng()), a(x), b(x), val(val), sum(val) {}
-  ~treap() {
-    if (l) delete l;
-    if (r) delete r;
-  }
+struct Segment {
+    int n;
+    vector<long long> t;
+    Segment(int _n, vector<int> a) {
+        for (n = 1; n < _n; n <<= 1);
+        t.resize(2 * n);
+        for (int i = 0; i < _n; ++i) {
+            t[i + n] = a[i];
+        }
+        for (int i = n-1; i > 0; --i) {
+            t[i] = t[2*i] + t[2*i+1];
+        }
+    }
+    void update(int p, int v) {
+        for (t[p += n] = v; p > 1; p >>= 1) {
+            t[p >> 1] = t[p] + t[p ^ 1];
+        }
+    }
+    long long query(int i, int tl, int tr, int l, int r) {
+        if (r < tl || tr < l) return 0;
+        if (l <= tl && tr <= r) return t[i];
+        else {
+            int tm = (tl + tr) / 2;
+            return query(2*i, tl, tm, l, r) +
+                   query(2*i+1, tm+1, tr, l, r);
+        }
+    }
+    long long query(int l, int r) {
+        return query(1, 0, n-1, l, r);;
+    }
 };
 
-inline void clean(treap* const t) {
-  if (t) {
-    t->l = t->r = nullptr;
-    delete t;
-  }
-}
-
-inline LL sum(const treap* const t) {
-  return t ? t->sum : 0LL;
-}
-
-inline void upd(treap* const t) {
-  // assume t->l and t->r are already updated
-  if (t) {
-    t->sum = t->val + sum(t->l) + sum(t->r);
-    t->a = t->l ? t->l->a : t->x;
-    t->b = t->r ? t->r->b : t->x;
-  }
-}
-
-void split(treap* const t, const int x, treap*& l, treap*& r) {
-  // split t in [-inf, x], [x+1, +inf]
-  if (!t) {
-    l = r = nullptr;
-  } else if (t->x <= x) {
-    split(t->r, x, t->r, r); l = t;
-  } else {
-    split(t->l, x, l, t->l); r = t;
-  }
-  upd(l);
-  upd(r);
-}
-
-void merge(treap*& t, treap* l, treap* r) {
-  if (!l || !r) {
-    t = l ? l : r;
-  } else if (l->y > r->y) {
-    merge(l->r, l->r, r); t = l;
-  } else {
-    merge(r->l, l, r->l); t = r;
-  }
-  upd(t);
-}
-
-void insert(treap*& t, treap* const nw) {
-  // assume nw->x is not present in t
-  assert(!t || t->x != nw->x);
-  if (!t) {
-    t = nw;
-  } else if (nw->y > t->y) {
-    split(t, nw->x, nw->l, nw->r);
-    t = nw;
-  } else {
-    insert(nw->x <= t->x ? t->l : t->r, nw);
-  }
-  upd(t);
-}
-
-void erase(treap*& t, const int x) {
-  if (!t) return;
-  if (t->x == x) {
-    treap* tmp = t;
-    merge(t, t->l, t->r);
-    clean(tmp);
-  } else {
-    erase(x <= t->x ? t->l : t->r, x);
-  }
-  upd(t);
-}
-
-LL sum(treap* const t, int l, int r) {
-  upd(t);
-  if (!t || r < t->a || t->b < l) return 0LL;
-  if (l <= t->a && t->b <= r) return t->sum;
-  return (l <= t->x && t->x <= r ? t->val : 0LL) + sum(t->l, l, r) + sum(t->r, l, r);
-}
-
 int main() {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  int n; cin >> n;
-  int q; cin >> q;
-  vector<int> a(n);
-  treap* t = nullptr;
-  for (int i = 0; i < n; ++i) {
-    cin >> a[i];
-    insert(t, new treap(i+1, a[i]));
-  }
-  for (int i = 0, a, b, c; i < q; ++i) {
-    cin >> a >> b >> c;
-    if (a == 1) {
-      erase(t, b);
-      insert(t, new treap(b, c));
-    } else {
-      cout << sum(t, b, c) << "\n";
+    int n; cin >> n;
+    int q; cin >> q;
+    vector<int> a(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> a[i];
     }
-  }
-  delete t;
+    Segment st(n, a);
+    for (int i = 0, t, a, b; i < q; ++i) {
+        cin >> t >> a >> b;
+        if (t == 1) {
+            st.update(a-1, b);
+        } else {
+            cout << st.query(a-1, b-1) << "\n";
+        }
+    }
 }
-

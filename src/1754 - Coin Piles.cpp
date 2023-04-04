@@ -1,3 +1,10 @@
+/*
+Task:              1754 Coin Piles
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-30 17:47:51
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <iostream>
 using namespace std;
 int main(){

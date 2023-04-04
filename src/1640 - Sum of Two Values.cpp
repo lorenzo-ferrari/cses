@@ -1,3 +1,10 @@
+/*
+Task:              1640 Sum of Two Values
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-14 11:59:03
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -22,4 +29,3 @@ int32_t main() {
     }
     cout << "IMPOSSIBLE" << "\n";
 }
-

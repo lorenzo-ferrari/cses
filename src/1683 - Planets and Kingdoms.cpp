@@ -1,3 +1,10 @@
+/*
+Task:              1683 Planets and Kingdoms
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-19 20:39:30
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -55,4 +62,3 @@ int32_t main() {
         cout << c[i] << " ";
     cout << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              2209 Counting Necklaces
+Sender:            lorenzo_ferrari
+Submission time:   2022-11-28 11:02:13
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -31,4 +38,3 @@ int main() {
     ans = ans * fxp(n, mod - 2) % mod;
     cout << ans << "\n";
 }
-

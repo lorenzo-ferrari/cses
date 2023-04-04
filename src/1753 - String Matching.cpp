@@ -1,3 +1,10 @@
+/*
+Task:              1753 String Matching
+Sender:            lorenzo_ferrari
+Submission time:   2021-05-29 18:20:38
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <string>
 #include <vector>
 
@@ -42,4 +49,3 @@ int main() {
 
 	cout << ans << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              1093 Two Sets II
+Sender:            lorenzo_ferrari
+Submission time:   2021-09-06 17:12:15
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -19,4 +26,3 @@ int main() {
 
     cout << ((sum & 1) ? 0 : dp[n][sum / 2]) << "\n";
 }
-

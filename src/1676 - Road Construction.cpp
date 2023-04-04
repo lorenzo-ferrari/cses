@@ -1,3 +1,10 @@
+/*
+Task:              1676 Road Construction
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-19 19:40:15
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <iostream>
 
 #define C std::cin >>
@@ -24,4 +31,3 @@ int main() {
         printf("%d %d\n", n, x);
     }
 }
-

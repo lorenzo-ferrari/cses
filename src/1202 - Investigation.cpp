@@ -1,3 +1,10 @@
+/*
+Task:              1202 Investigation
+Sender:            lorenzo_ferrari
+Submission time:   2023-01-25 18:23:25
+Language:          C++17
+Result:            ACCEPTED
+*/
 // https://cses.fi/problemset/task/1202/
 
 #include <bits/stdc++.h>
@@ -46,4 +53,3 @@ int main() {
   }
   cout << d[n-1] << " " << cnt[n-1] << " " << mn[n-1] << " " << mx[n-1] << "\n";
 }
-

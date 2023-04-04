@@ -1,3 +1,10 @@
+/*
+Task:              1687 Company Queries I
+Sender:            lorenzo_ferrari
+Submission time:   2022-03-03 23:13:09
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,4 +53,3 @@ int main() {
     cout << ans << "\n";
   }
 }
-

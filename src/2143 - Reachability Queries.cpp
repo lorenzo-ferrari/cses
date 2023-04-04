@@ -1,3 +1,10 @@
+/*
+Task:              2143 Reachability Queries
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-28 15:50:36
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("Ofast")
 using namespace std;
@@ -111,4 +118,3 @@ int main() {
     }
   }
 }
-

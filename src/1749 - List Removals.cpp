@@ -1,3 +1,10 @@
+/*
+Task:              1749 List Removals
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-24 11:36:07
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -43,4 +50,3 @@ int main() {
         update(j, 0);
     }
 }
-

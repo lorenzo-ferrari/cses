@@ -1,3 +1,10 @@
+/*
+Task:              1669 Round Trip
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-28 17:32:47
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <stack>
 #include <queue>
 #include <vector>

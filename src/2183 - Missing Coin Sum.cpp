@@ -1,3 +1,10 @@
+/*
+Task:              2183 Missing Coin Sum
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-16 10:44:08
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -20,4 +27,3 @@ int32_t main() {
 
     cout << ans << "\n";
 }
-

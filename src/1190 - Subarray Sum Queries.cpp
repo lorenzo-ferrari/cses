@@ -1,3 +1,10 @@
+/*
+Task:              1190 Subarray Sum Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-24 23:18:55
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -59,4 +66,3 @@ int32_t main() {
 	    cout << std::max(0LL, t.t[1].arr) << "\n";
 	}
 }
-

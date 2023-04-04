@@ -1,3 +1,10 @@
+/*
+Task:              1193 Labyrinth
+Sender:            lorenzo_ferrari
+Submission time:   2022-12-21 18:04:51
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 // 5 8
@@ -84,4 +91,3 @@ int main() {
     cout << ans << "\n";
   }
 }
-

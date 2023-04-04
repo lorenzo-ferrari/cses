@@ -1,3 +1,10 @@
+/*
+Task:              2181 Counting Tilings
+Sender:            lorenzo_ferrari
+Submission time:   2022-05-20 18:28:52
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -49,4 +56,3 @@ int main() {
   }
   cout << dp[m][0] << "\n";
 }
-

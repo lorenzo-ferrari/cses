@@ -1,3 +1,10 @@
+/*
+Task:              1083 Missing Number
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-30 12:31:14
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #define MAXN 100000
 using namespace std;

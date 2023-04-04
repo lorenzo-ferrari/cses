@@ -1,3 +1,10 @@
+/*
+Task:              1694 Download Speed
+Sender:            lorenzo_ferrari
+Submission time:   2021-05-24 15:21:58
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
  
@@ -68,4 +75,3 @@ int32_t main() {
  
 	cout << maxflow(n, 0, n-1) << "\n";
 }
-

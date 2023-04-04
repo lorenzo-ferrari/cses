@@ -1,3 +1,10 @@
+/*
+Task:              1634 Minimizing Coins
+Sender:            lorenzo_ferrari
+Submission time:   2022-10-26 12:20:11
+Language:          C++17
+Result:            ACCEPTED
+*/
 #pragma GCC optimize ("O3")
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,4 +27,3 @@ int main() {
     }
     cout << (dp[x] == 1e9 ? -1 : dp[x]) << "\n";
 }
-

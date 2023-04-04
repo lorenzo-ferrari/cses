@@ -1,3 +1,10 @@
+/*
+Task:              1073 Towers
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-16 13:44:55
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -17,4 +24,3 @@ int32_t main() {
 
     cout << st.size() << "\n";
 }
-

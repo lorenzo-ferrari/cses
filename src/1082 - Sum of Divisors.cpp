@@ -1,3 +1,10 @@
+/*
+Task:              1082 Sum of Divisors
+Sender:            lorenzo_ferrari
+Submission time:   2022-02-02 22:54:18
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -21,4 +28,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              1076 Sliding Median
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-19 15:23:11
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -34,4 +41,3 @@ int main() {
   }
   cout << "\n";
 }
-

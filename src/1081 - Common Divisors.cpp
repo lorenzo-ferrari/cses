@@ -1,3 +1,10 @@
+/*
+Task:              1081 Common Divisors
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-01 14:53:42
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,4 +25,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

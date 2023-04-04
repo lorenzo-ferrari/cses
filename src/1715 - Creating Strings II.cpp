@@ -1,3 +1,10 @@
+/*
+Task:              1715 Creating Strings II
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-28 10:25:43
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -34,4 +41,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

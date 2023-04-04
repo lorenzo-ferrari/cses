@@ -1,3 +1,10 @@
+/*
+Task:              1145 Increasing Subsequence
+Sender:            lorenzo_ferrari
+Submission time:   2021-09-07 14:10:24
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,4 +53,3 @@ cin.tie(NULL);
         t.upd(x[i], t.query(x[i] - 1) + 1);
     cout << t.query(n) << "\n";
 }
-

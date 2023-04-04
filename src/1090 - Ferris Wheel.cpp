@@ -1,3 +1,10 @@
+/*
+Task:              1090 Ferris Wheel
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-16 18:46:19
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int main() {

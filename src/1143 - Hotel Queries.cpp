@@ -1,3 +1,10 @@
+/*
+Task:              1143 Hotel Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-24 11:24:30
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -39,4 +46,3 @@ int main() {
         }
     }
 }
-

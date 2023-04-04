@@ -1,3 +1,10 @@
+/*
+Task:              1744 Rectangle Cutting
+Sender:            lorenzo_ferrari
+Submission time:   2021-08-27 15:01:03
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -24,4 +31,3 @@ cin.tie(NULL);
 
     cout << dp[a][b] << "\n";
 }
-

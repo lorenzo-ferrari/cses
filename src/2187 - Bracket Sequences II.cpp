@@ -1,3 +1,10 @@
+/*
+Task:              2187 Bracket Sequences II
+Sender:            lorenzo_ferrari
+Submission time:   2022-12-19 23:31:21
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -52,4 +59,3 @@ int main() {
     }
     cout << solve((n - s.size() + op) / 2, op) << "\n";
 }
-

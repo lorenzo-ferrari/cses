@@ -1,3 +1,10 @@
+/*
+Task:              1737 Range Queries and Copies
+Sender:            lorenzo_ferrari
+Submission time:   2021-09-10 10:29:10
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -90,4 +97,3 @@ cin.tie(NULL);
 
     roots.clear();
 }
-

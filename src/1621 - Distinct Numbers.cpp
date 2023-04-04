@@ -1,3 +1,10 @@
+/*
+Task:              1621 Distinct Numbers
+Sender:            lorenzo_ferrari
+Submission time:   2020-05-09 13:44:02
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #define MOD 1000000007
 using namespace std;

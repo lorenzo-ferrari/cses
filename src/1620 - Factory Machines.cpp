@@ -1,3 +1,10 @@
+/*
+Task:              1620 Factory Machines
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-14 09:42:21
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -27,4 +34,3 @@ int main() {
   }
   cout << LL(r) << "\n";
 }
-

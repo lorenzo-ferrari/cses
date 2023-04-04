@@ -1,3 +1,10 @@
+/*
+Task:              1159 Book Shop II
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-04 10:50:43
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
@@ -41,4 +48,3 @@ int main() {
   }
   cout << dp[x] << "\n";
 }
-

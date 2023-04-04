@@ -1,3 +1,10 @@
+/*
+Task:              1735 Range Updates and Sums
+Sender:            lorenzo_ferrari
+Submission time:   2023-02-22 18:25:37
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 

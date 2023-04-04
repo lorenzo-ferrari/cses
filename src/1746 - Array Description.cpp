@@ -1,3 +1,10 @@
+/*
+Task:              1746 Array Description
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-21 17:00:18
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -23,4 +30,3 @@ int main() {
         ans = (ans + dp[n-1][i]) % mod;
     cout << ans << "\n";
 }
-

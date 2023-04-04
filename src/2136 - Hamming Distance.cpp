@@ -1,3 +1,10 @@
+/*
+Task:              2136 Hamming Distance
+Sender:            lorenzo_ferrari
+Submission time:   2022-10-26 13:54:58
+Language:          C++17
+Result:            ACCEPTED
+*/
 #pragma GCC optimize ("O3")
 #pragma GCC target ("popcnt")
 #include <bits/stdc++.h>
@@ -19,4 +26,3 @@ int main() {
     }
     cout << ans << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              2192 Point in Polygon
+Sender:            lorenzo_ferrari
+Submission time:   2022-04-10 22:53:13
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -82,4 +89,3 @@ int32_t main() {
 		solve();
 	}
 }
-

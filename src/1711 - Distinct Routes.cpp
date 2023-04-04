@@ -1,3 +1,10 @@
+/*
+Task:              1711 Distinct Routes
+Sender:            lorenzo_ferrari
+Submission time:   2020-12-27 13:31:42
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -88,4 +95,3 @@ int main() {
 
 	maxflow(n, 0, n-1);
 }
-

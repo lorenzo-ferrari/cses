@@ -1,3 +1,10 @@
+/*
+Task:              1203 Visiting Cities
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-10 14:43:24
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -59,4 +66,3 @@ int main() {
   for (int i : ans) cout << i << " ";
   cout << "\n";
 }
-

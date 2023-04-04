@@ -1,3 +1,10 @@
+/*
+Task:              1071 Number Spiral
+Sender:            lorenzo_ferrari
+Submission time:   2020-05-08 21:44:06
+Language:          C++17
+Result:            ACCEPTED
+*/
 //x-"larghezza", y-"altezza"
 #include <bits/stdc++.h>
 using namespace std;

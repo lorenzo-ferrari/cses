@@ -1,3 +1,10 @@
+/*
+Task:              1717 Christmas Party
+Sender:            lorenzo_ferrari
+Submission time:   2022-06-06 14:08:04
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -18,4 +25,3 @@ int main() {
   }
   cout << dis[n] << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              1085 Array Division
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-01 20:41:56
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
@@ -29,4 +36,3 @@ int main() {
   }
   cout << r << "\n";
 }
-

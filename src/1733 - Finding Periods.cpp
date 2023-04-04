@@ -1,3 +1,10 @@
+/*
+Task:              1733 Finding Periods
+Sender:            lorenzo_ferrari
+Submission time:   2021-05-29 19:31:29
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -44,4 +51,3 @@ cerr << s << "\n";
 			cout << i << " ";
 	cout << n << "\n";
 }
-

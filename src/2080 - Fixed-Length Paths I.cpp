@@ -1,3 +1,10 @@
+/*
+Task:              2080 Fixed-Length Paths I
+Sender:            lorenzo_ferrari
+Submission time:   2022-06-02 15:44:47
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -61,4 +68,3 @@ int main() {
   auto m = paths(paths, 0, -1);
   cout << ans << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              2190 Line Segment Intersection
+Sender:            lorenzo_ferrari
+Submission time:   2021-05-22 19:37:08
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -66,4 +73,3 @@ int32_t main() {
 		solve();
 	}
 }
-

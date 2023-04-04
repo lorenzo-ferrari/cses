@@ -1,3 +1,10 @@
+/*
+Task:              1629 Movie Festival
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-14 11:51:22
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -44,4 +51,3 @@ int32_t main() {
 
     cout << dp.back() << "\n";
 }
-

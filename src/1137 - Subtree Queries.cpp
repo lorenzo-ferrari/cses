@@ -1,3 +1,10 @@
+/*
+Task:              1137 Subtree Queries
+Sender:            lorenzo_ferrari
+Submission time:   2022-03-03 15:06:03
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -66,4 +73,3 @@ int main() {
     }
   }
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              1625 Grid Paths
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-18 15:19:27
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <iostream>
 #include <string>
 
@@ -28,4 +35,3 @@ int main() {
   solve(0, 6);
   std::cout << cnt << "\n";
 }
-

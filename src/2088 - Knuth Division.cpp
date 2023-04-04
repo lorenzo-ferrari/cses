@@ -1,3 +1,10 @@
+/*
+Task:              2088 Knuth Division
+Sender:            lorenzo_ferrari
+Submission time:   2022-12-12 22:47:35
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -30,4 +37,3 @@ int main() {
     }
     cout << dp[0][n-1] << "\n";
 }
-

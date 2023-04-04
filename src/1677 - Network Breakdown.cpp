@@ -1,3 +1,10 @@
+/*
+Task:              1677 Network Breakdown
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-22 19:02:49
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -62,4 +69,3 @@ int main() {
     cout << i << " ";
   cout << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              1141 Playlist
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-16 13:40:52
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -21,4 +28,3 @@ int main() {
 
     cout << ans << "\n";
 }
-

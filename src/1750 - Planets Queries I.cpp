@@ -1,43 +1,52 @@
-#include <vector>
-#include <iostream>
+/*
+Task:              1750 Planets Queries I
+Sender:            lorenzo_ferrari
+Submission time:   2023-03-07 13:48:05
+Language:          C++17
+Result:            ACCEPTED
+*/
+#pragma GCC optimize("O3")
+#include <bits/stdc++.h>
 using namespace std;
 
-const int LEV = 35;
+static constexpr int LOG = 31;
+vector<int> up[LOG];
+
+void build(int n, vector<int> p) {
+    for (int i = 0; i < LOG; ++i) {
+        up[i].resize(n);
+    }
+    for (int i = 0; i < n; ++i) {
+        up[0][i] = p[i];
+    }
+    for (int j = 1; j < LOG; ++j) {
+        for (int i = 0; i < n; ++i) {
+            up[j][i] = up[j-1][up[j-1][i]];
+        }
+    }
+}
+
+int lift(int v, int k) {
+    for (int i = 0; i < LOG; ++i) {
+        if (k & (1 << i)) {
+            v = up[i][v];
+        }
+    }
+    return v;
+}
 
 int main() {
-    int n, q;
-    scanf("%d%d", &n, &q);
-    vector <int> to(n + 1);
-    for (int i = 1; i <= n; i++)
-        scanf("%d", &to[i]);
-    
-    // build the sparse table
-    vector <vector<int>> table(LEV, vector <int> (n + 1));
-    {
-        for (int i = 1; i <= n; i++) {
-            table[0][i] = i;
-            table[1][i] = to[i];
-        }
-        for (int i = 2; i < LEV; i++)
-            for (int j = 1; j <= n; j++)
-                table[i][j] = table[i - 1][table[i - 1][j]];
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n; cin >> n;
+    int q; cin >> q;
+    vector<int> p(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> p[i]; --p[i];
     }
-
-    while (q--) {
-        // query
-        int x, k;
-        scanf("%d%d", &x, &k);
-
-        while (k) {
-            int steps = 0;
-            while (steps < LEV - 1 && (1 << (steps) <= k))
-                steps++;
-            x = table[steps][x];
-            k -= (1 << (steps - 1));
-        }
-
-        printf("%d\n", x);
+    build(n, p);
+    for (int x, k; q--;) {
+        cin >> x >> k; --x;
+        cout << lift(x, k)+1 << "\n";
     }
-
-
 }

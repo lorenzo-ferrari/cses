@@ -1,3 +1,10 @@
+/*
+Task:              2162 Josephus Problem I
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-16 14:57:46
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -30,4 +37,3 @@ int32_t main() {
     }
     cout << "\n";
 }
-

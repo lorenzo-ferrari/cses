@@ -1,3 +1,10 @@
+/*
+Task:              1637 Removing Digits
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-21 15:35:45
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -27,4 +34,3 @@ int main() {
 
     cout << dp[n] << "\n";
 }
-

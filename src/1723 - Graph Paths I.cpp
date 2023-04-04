@@ -1,3 +1,10 @@
+/*
+Task:              1723 Graph Paths I
+Sender:            lorenzo_ferrari
+Submission time:   2022-02-15 12:17:12
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -71,4 +78,3 @@ int main() {
   Matrix ans = mat_exp(adj, k);
   cout << ans.a[0][n-1] << "\n";
 }
-

@@ -1,3 +1,10 @@
+/*
+Task:              1095 Exponentiation
+Sender:            lorenzo_ferrari
+Submission time:   2020-11-06 13:22:22
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <iostream>
 #pragma GCC optimize ("O3")
 

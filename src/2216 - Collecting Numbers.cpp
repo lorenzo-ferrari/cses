@@ -1,3 +1,10 @@
+/*
+Task:              2216 Collecting Numbers
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-16 10:49:43
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -23,4 +30,3 @@ int32_t main() {
 
     cout << ans << "\n";
 }
-

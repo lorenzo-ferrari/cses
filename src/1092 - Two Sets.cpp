@@ -1,3 +1,10 @@
+/*
+Task:              1092 Two Sets
+Sender:            lorenzo_ferrari
+Submission time:   2020-05-08 23:00:44
+Language:          C++17
+Result:            ACCEPTED
+*/
 //x-"larghezza", y-"altezza"
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,3 +1,10 @@
+/*
+Task:              1084 Apartments
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-16 19:56:52
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int main() {

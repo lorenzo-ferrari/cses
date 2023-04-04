@@ -1,3 +1,10 @@
+/*
+Task:              2132 Increasing Array II
+Sender:            lorenzo_ferrari
+Submission time:   2022-05-21 16:29:20
+Language:          C++17
+Result:            ACCEPTED
+*/
 // https://codeforces.com/blog/entry/77298
 #include <bits/stdc++.h>
 using namespace std;
@@ -20,4 +27,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

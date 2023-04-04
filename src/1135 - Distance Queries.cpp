@@ -1,3 +1,10 @@
+/*
+Task:              1135 Distance Queries
+Sender:            lorenzo_ferrari
+Submission time:   2022-03-04 10:17:38
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -74,4 +81,3 @@ int main() {
     cout << ans << "\n";
   }
 }
-

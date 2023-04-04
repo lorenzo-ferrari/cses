@@ -1,3 +1,10 @@
+/*
+Task:              1619 Restaurant Customers
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-14 11:31:30
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -35,4 +42,3 @@ int32_t main() {
 
     cout << ans << "\n";
 }
-

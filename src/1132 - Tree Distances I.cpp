@@ -1,3 +1,10 @@
+/*
+Task:              1132 Tree Distances I
+Sender:            lorenzo_ferrari
+Submission time:   2022-01-10 21:39:57
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -43,4 +50,3 @@ int main() {
   }
   cout << "\n";
 }
-

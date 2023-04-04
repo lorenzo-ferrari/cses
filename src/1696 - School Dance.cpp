@@ -1,3 +1,10 @@
+/*
+Task:              1696 School Dance
+Sender:            lorenzo_ferrari
+Submission time:   2020-12-26 20:24:54
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -84,4 +91,3 @@ int main() {
 
 	maxflow(tot, n, m, 0, tot-1);
 }
-

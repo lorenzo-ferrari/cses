@@ -1,3 +1,10 @@
+/*
+Task:              1662 Subarray Divisibility
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-17 21:42:05
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -28,4 +35,3 @@ int main() {
   }
   cout << ans << "\n";
 }
-

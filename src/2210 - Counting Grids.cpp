@@ -1,3 +1,10 @@
+/*
+Task:              2210 Counting Grids
+Sender:            lorenzo_ferrari
+Submission time:   2022-11-29 21:30:47
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -38,4 +45,3 @@ int main() {
     }
     cout << ans << "\n";
 }
-

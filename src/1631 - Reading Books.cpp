@@ -1,3 +1,10 @@
+/*
+Task:              1631 Reading Books
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-21 15:22:53
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -21,4 +28,3 @@ int main() {
 
     cout << s << "\n";
 }
-

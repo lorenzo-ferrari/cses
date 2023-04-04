@@ -1,3 +1,10 @@
+/*
+Task:              2166 Prefix Sum Queries
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-24 22:19:39
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -62,4 +69,3 @@ int main() {
         }
     }
 }
-

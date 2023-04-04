@@ -1,3 +1,10 @@
+/*
+Task:              1164 Room Allocation
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-14 09:32:11
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
@@ -34,4 +41,3 @@ int main() {
     cout << i << " ";
   cout << "\n";
 }
-

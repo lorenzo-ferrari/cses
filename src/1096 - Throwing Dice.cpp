@@ -1,3 +1,10 @@
+/*
+Task:              1096 Throwing Dice
+Sender:            lorenzo_ferrari
+Submission time:   2022-12-19 23:38:11
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 using LL = long long;
@@ -33,4 +40,3 @@ int main() {
     LL n; cin >> n;
     cout << solve(n) << "\n";
 }
-

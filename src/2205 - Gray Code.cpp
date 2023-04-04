@@ -1,3 +1,10 @@
+/*
+Task:              2205 Gray Code
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-11 23:42:59
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -22,4 +29,3 @@ int32_t main() {
     for (auto &s : v)
         cout << s << "\n";
 }
-

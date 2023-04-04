@@ -1,3 +1,10 @@
+/*
+Task:              1650 Range Xor Queries
+Sender:            lorenzo_ferrari
+Submission time:   2020-04-13 16:48:42
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 int main()

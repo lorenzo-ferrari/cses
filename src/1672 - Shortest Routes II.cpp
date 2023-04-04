@@ -1,3 +1,10 @@
+/*
+Task:              1672 Shortest Routes II
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-29 21:20:53
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <vector>
 #include <assert.h>
 #include <iostream>

@@ -1,3 +1,10 @@
+/*
+Task:              1139 Distinct Colors
+Sender:            lorenzo_ferrari
+Submission time:   2022-03-03 12:58:07
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -41,4 +48,3 @@ int main() {
   }
   cout << "\n";
 }
-

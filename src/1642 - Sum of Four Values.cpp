@@ -1,3 +1,10 @@
+/*
+Task:              1642 Sum of Four Values
+Sender:            lorenzo_ferrari
+Submission time:   2021-12-17 21:34:46
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 #pragma GCC optimize ("O3")
 using namespace std;
@@ -34,4 +41,3 @@ int main() {
   }
   cout << "IMPOSSIBLE" << "\n";
 }
-

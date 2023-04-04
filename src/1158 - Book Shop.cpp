@@ -1,3 +1,10 @@
+/*
+Task:              1158 Book Shop
+Sender:            lorenzo_ferrari
+Submission time:   2021-06-21 15:48:57
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,4 +24,3 @@ int main() {
             dp[j] = max(dp[j], dp[j - h[i]] + s[i]);
     cout << dp[x] << "\n";
 }
-

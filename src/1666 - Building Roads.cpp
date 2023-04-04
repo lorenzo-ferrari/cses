@@ -1,3 +1,10 @@
+/*
+Task:              1666 Building Roads
+Sender:            lorenzo_ferrari
+Submission time:   2020-10-28 10:32:09
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <queue>
 #include <vector>
 #include <iostream>

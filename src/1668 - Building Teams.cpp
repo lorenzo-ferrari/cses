@@ -1,3 +1,10 @@
+/*
+Task:              1668 Building Teams
+Sender:            lorenzo_ferrari
+Submission time:   2022-12-21 18:21:53
+Language:          C++17
+Result:            ACCEPTED
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -38,4 +45,3 @@ int main() {
     cout << endl;
   }
 }
-
